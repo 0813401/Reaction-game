@@ -21,9 +21,10 @@
 * 等待背景顏色更換，立即按下滑鼠左鍵
 * 此小遊戲是在測驗你的反應力！
 
-* ### Code III－lol の LoL
+### Code III－lol の LoL
 ![image](https://github.com/user-attachments/assets/8ae38293-5db6-4511-be7f-c3e8d10094cb)
 
+#### 玩法
 - 倒數60秒內看能得多少分！
 - 右鍵點小兵加分，小兵會隨著時間消失！
 - 左邊QWER再紅色範圍內按即可加分
