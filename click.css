@@ -1,0 +1,128 @@
+@font-face {
+	font-family: "ch";
+	size: 1.2em;
+    src: url('fonts/cwTeXYen-zhonly.woff')format('woff'),
+        url('fonts/cwTeXYen-zhonly.ttf')format('truetype'),
+        url('fonts/cwTeXYen-zhonly.eot')format('embedded-opentype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: yellowgreen;
+}
+
+div#time {
+    margin: 0 50px;
+    padding: 0 30px;
+    text-align: right;
+    font-family: "ch";
+    font-size: 32px;
+}
+
+div#container {
+    position: relative;
+    text-align: center;
+    margin: 0.5em 3em;
+    padding: 2em 1em;
+    width: super;
+    height: 600px;
+    background-color: yellowgreen;
+    /* background-color: blue; */
+}
+
+.number {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    border: black solid;
+    background-color: gainsboro;
+    line-height: 80px;
+    text-align: center;
+    font-size: 36px;
+    font-style: 'ch';
+    position: absolute;
+}
+
+.text {
+    letter-spacing: 4px;
+    font-size: 80px;
+    font-style: 'ch';
+    text-align: center;
+}
+
+
+@keyframes animate-stripes {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 60px 0;
+    }
+}
+
+/* @keyframes auto-progress {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+} */
+
+.progress-bar {
+    background-color: #1a1a1a;
+    height: 90px;
+    width: 900px;
+    margin: 50px auto;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
+}
+
+.stripes {
+    background-size: 60px 60px;
+    background-image: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, .15) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255, 255, 255, .15) 50%,
+        rgba(255, 255, 255, .15) 75%,
+        transparent 75%,
+        transparent
+    );
+}
+
+.stripes.animated {
+  animation: animate-stripes 0.6s linear infinite;
+}
+
+.stripes.animated.slower {
+  animation-duration: 1.25s;
+}
+
+.stripes.reverse {
+  animation-direction: reverse;
+}
+
+.progress-bar-inner {
+  display: block;
+  height: 90px;
+  width: 0%;
+  max-width: 900px;
+  background-color:  #0066CC;
+  border-radius: 3px;
+  position: relative;
+  /*background: linear-gradient(
+    90deg,
+     #0066CC 0%, #00E3E3 20%,
+     #02F78E 40%, #00A600 60%,
+     #FF5151 80%, #CE0000 100%
+  ); */
+  animation: auto-progress 12s 1 ease-out ; /*name duration iter way(快到慢)*/
+}

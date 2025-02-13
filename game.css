@@ -1,0 +1,209 @@
+@font-face {
+	font-family: "ch";
+	size: 1.2em;
+    src: url('fonts/cwTeXYen-zhonly.woff')format('woff'),
+        url('fonts/cwTeXYen-zhonly.ttf')format('truetype'),
+        url('fonts/cwTeXYen-zhonly.eot')format('embedded-opentype');
+}
+
+* {
+    margin: 0;
+    padding: 0;    
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: #460046;
+}
+
+div#Timer{
+    position: absolute;
+    left: 1050px;
+    top: 0px;
+}
+
+div#score{
+    position: absolute;
+    left: 500px;
+    top: 0px;   
+}
+
+div.table {
+    font-size: 50px;
+    font-family: 'ch';
+    color: snow;
+}
+
+div#container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #460046;
+}
+
+#crystal{
+    position: absolute;
+    left: 850px;
+    top: -20px;
+    height: 15%;
+}
+
+#plane {
+    position: absolute;
+    left: 1380px;
+    top: 680px;
+    width: 100px;
+    height: 100px;
+    background: url('Asset/plane.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.rock{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: url('Asset/rock.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.monster {
+    display: inline-block;
+    position: absolute;
+    background: url('Asset/monster.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.map{
+    position: absolute;
+    left: 1300px;
+    top: 400px;
+    height: 350px;
+    width: 350px;
+    border: 1px solid transparent;
+    border-radius: 100%;
+    border-width: 10px;
+    border-image: radial-gradient(Closest-corner, #921AFF,#4B0091,snow,#921AFF);
+    border-image-slice: 1;
+}
+
+.QWER {
+    line-height: 50px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 9;
+    background-color: #4B0091;
+    font-size: 30px;
+    color: snow;
+    border-radius: 100%;
+}
+
+.QWER_border{
+    position: absolute;
+    line-height: 66px;
+    text-align: center;
+    border-radius: 100%;
+    z-index: 8;
+    width: 66px;
+    height: 66px;
+    background: radial-gradient(circle,#4B0091,snow,#4B0091);
+}
+
+.bar_border{
+    position: absolute;
+    line-height: 66px;
+    text-align: center;
+    border-radius: 60px;
+    width: 206px;
+    height: 30px;
+    background: radial-gradient(circle,#921AFF,#4B0091);
+}
+
+.progress-bar {
+	border-radius: 60px;
+    width: 100%;
+}
+
+span{
+    display: block;
+    z-index: 10;
+}
+
+.bar {
+  background: rgba(0,0,0,0.075);
+}
+
+#progress1 {
+    position: absolute;
+    top: 175px;
+    left: 50px;
+    height: 10px;
+    border-radius: 60px;
+    animation: loader 9s linear infinite;
+    background: greenyellow;
+    color: #fff;
+    padding: 5px;
+    z-index: 5;
+}
+
+#progress2 {
+    position: absolute;
+    top: 255px;
+    left: 50px;
+    height: 10px;
+    border-radius: 60px;
+    animation: loader 6s linear infinite;
+    background: greenyellow;
+    color: #fff;
+    padding: 5px;
+    z-index: 5;
+}
+
+#progress3 {
+    position: absolute;
+    top: 335px;
+    left: 50px;
+    height: 10px;
+    border-radius: 60px;
+    animation: loader 4s linear infinite;
+    background: greenyellow;
+    color: #fff;
+    padding: 5px;
+    z-index: 5;
+}
+
+#progress4 {
+    position: absolute;
+    top: 415px;
+    left: 50px;
+    height: 10px;
+    border-radius: 60px;
+    animation: loader 19s linear infinite;
+    background: greenyellow;
+    color: #fff;
+    padding: 5px;
+    z-index: 5;
+}
+
+@keyframes loader {
+	0% {
+		width: 10%;
+    }
+    75%{
+        width: 2.5%;
+        background-color: greenyellow;
+    }
+    80% {
+        width: 2.0%;
+        background-color: red;
+    }
+	100% {
+        width: 0%;
+        background-color: red;
+	}
+}
