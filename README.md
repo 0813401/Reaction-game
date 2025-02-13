@@ -17,7 +17,7 @@
 ![image](https://github.com/user-attachments/assets/f5c6b328-ecfd-40be-b43d-438dac15a066)
 
 #### 玩法
-+* 可按畫面中的任意地方即可開始
+* 可按畫面中的任意地方即可開始
 * 等待背景顏色更換，立即按下滑鼠左鍵
 * 此小遊戲是在測驗你的反應力！
 
